@@ -35,7 +35,7 @@ fileList = os.listdir(path)
 for file in fileList:
     if file.endswith('.txt'): # Opens and reads all files in folder with .txt extension.
         print(os.path.join(path, file)) # Prints name and location of file.
-        content = open(os.path.join(path, file), 'r+')
+        content = open(os.path.join(path, file), 'r')
         text = content.read().lower() # Converts text to lowercase to avoid duplication in type count.
         result = myRegex.findall(text) # Creates a list of all words or phrases matching regex.
         typesTokensCount(result)
