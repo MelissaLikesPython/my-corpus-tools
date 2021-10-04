@@ -24,7 +24,7 @@ fileList = os.listdir(path)
 for file in fileList:
     if file.endswith('.txt'):
         print(os.path.join(path, file))
-        content = open(os.path.join(path, file), 'r+')
+        content = open(os.path.join(path, file), 'r')
         text = content.read()
         result = userRegex.findall(text)
         print(result)
