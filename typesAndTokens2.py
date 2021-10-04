@@ -1,6 +1,4 @@
-# This program prints total types, total tokens and a count for each unique type of list item.
-
-myListExample = ['A', 'B', 'B', 'C', 'D', 'D', 'D', 'D', 'D', 'A']
+# This function prints total types, total tokens and a count for each unique type of list item.
 
 def typesTokensCount(myList):
     count = {} # Creates dictionary to hold the count data.
@@ -13,4 +11,3 @@ def typesTokensCount(myList):
     print('Tokens: ' + str(len(myList))) # Prints length of list (e.g. number of tokens)
     print(count) # Prints dictionary (e.g. count for each type)
 
-typesTokensCount(myListExample)
