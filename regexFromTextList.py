@@ -1,4 +1,4 @@
-# Creates regex from plain text list of words or phrases
+# Creates regex from plain text list of words or phrases, in order to search for multiple strings.
 
 content = open('/Users/melissacorlett/foodSecurityRegex.txt', 'r')
 text = content.read().lower()
