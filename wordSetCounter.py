@@ -20,7 +20,7 @@ def typesTokensCount(myList):
     resultsFile.write('Tokens: ' + str(len(myList)) + '\n') # Prints length of list (e.g. number of tokens)
     resultsFile.write(json.dumps(count) + '\n\n\n') # Prints dictionary (e.g. count for each type)
 
-# Edit this regex to find relevant words and phrases. Use pipe to separate multiple items.
+# Edit this regex to find relevant words and phrases.
 myRegex = re.compile(r'food security|environment|sustainability', re.I)
 
 # Edit this file path to save results in different location. 
