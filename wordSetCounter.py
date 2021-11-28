@@ -21,7 +21,7 @@ def typesTokensCount(myList):
     resultsFile.write(json.dumps(count) + '\n\n\n') # Prints dictionary (e.g. count for each type)
 
 # Edit this regex to find relevant words and phrases.
-myRegex = re.compile(r'food security|environment|sustainability', re.I)
+myRegex = re.compile(r'''food\ security|food\ insecurity|environmental\ sustainability''', re.VERBOSE|re.IGNORECASE)
 
 # Edit this file path to save results in different location. 
 resultsFile = open(Path.home() / 'results.txt', 'a')
